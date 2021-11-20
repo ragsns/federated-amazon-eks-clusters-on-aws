@@ -166,12 +166,12 @@ def clusters_disable_public_access(config, clusters):
 
     exec_command(["eksctl", "utils", "update-cluster-endpoints",
                   f"--cluster={clusters[0]['name']}", f"--region={region1}",
-                  "--public-access=false", "--private-access=true",
+                  "--public-access=true", "--private-access=true",
                   "--approve"])
 
     exec_command(["eksctl", "utils", "update-cluster-endpoints",
                   f"--cluster={clusters[1]['name']}", f"--region={region2}",
-                  "--public-access=false", "--private-access=true",
+                  "--public-access=true", "--private-access=true",
                   "--approve"])
 
 

@@ -20,4 +20,4 @@ spec:
   nodeGroups:
     - name: ng1
       instanceType: m5.xlarge
-      desiredCapacity: 2
+      desiredCapacity: 3

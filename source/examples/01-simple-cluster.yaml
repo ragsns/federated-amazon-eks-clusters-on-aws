@@ -19,5 +19,5 @@ metadata:
 spec:
   managedNodeGroups:
     - name: ng-1
-      instanceType: m5.large
-      desiredCapacity: 2
+      instanceType: m5.xlarge
+      desiredCapacity: 3
